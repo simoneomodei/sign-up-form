@@ -1,5 +1,131 @@
 :root {
+  --text-base-color: black;
+  --font-family-base: "Roboto Mono", monospace;
+
+  font-family: var(--font-family-base);
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.img-form {
+  background-image: url("/images/olena-sergienko-dIMJWLx1YbE-unsplash.jpg");
+  background-size: cover;
+  width: 30%;
+}
+
+.img-logo-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 250px;
+  padding: 20px;
+}
+
+.img-logo {
+  height: 70px;
+}
+
+.logo-text {
+  font-size: 3rem;
+}
+
+.img-credits {
+  color: white;
+  font-family: var(--font-family-base);
+  font-size: 0.8rem;
+  text-align: center;
+  position: relative;
+  top: 80%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: whitesmoke;
+  width: 70%;
+  gap: 50px;
+}
+
+.form-text {
+  padding-left: 100px;
+  padding-right: 5%;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.form-field {
+  background-color: white;
+  padding: 30px 0 30px 100px;
+}
+
+input {
+  display: block;
+  border: 1px solid #e5e7eb;
+  border-radius: 2px;
+  background-color: rgb(255, 251, 251);
+  margin-top: 5px;
+  padding: 2px 5px;
+  width: 200px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 1px 1px grey;
+}
+
+label {
+  font-size: 0.9rem;
+}
+
+.input-fields {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 60px;
+  padding-top: 20px;
+}
+
+button {
+  padding: 10px 70px;
+  color: white;
+  background-color: green;
+  border: 1px solid green;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  color: green;
+  background-color: white;
+  border: 1px solid green;
+}
+
+.bottom-text-form {
+  padding-left: 100px;
+  padding-top: 20px;
+}
+
+.login-text {
+  color: green;
+}
+
+input:invalid {
+  border: 1px solid red;
 }
